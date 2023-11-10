@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.accordion {
+  width: 700px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.content-box {
+  color: #868e96;
+  margin-left: 16px;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: auto;
+}
+.item {
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  padding: 20px 24px;
+  padding-right: 48px;
+  cursor: pointer;
+  border-top: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 24px;
+  row-gap: 32px;
+  align-items: center;
+}
+.number {
+  font-size: 24px;
+  font-weight: 500;
+  color: #888;
+}
+
+.title,
+.icon {
+  font-size: 24px;
+  font-weight: 500;
+}
+.open {
+  border-top: #087f5b;
+}
+.open .number,
+.open .title {
+  color: #087f5b;
+  margin-right: 10px;
+}
+.open .content-box {
+  margin-top: 10px;
+}
+.content {
+  color: #444;
+}
+.content-box a {
+  text-decoration: none;
+  color: #087f5b;
+}
+.content h2 {
+  text-align: center;
+}
+.url {
+  text-decoration: none;
+  color: red;
+}
+.score {
+  text-align: center;
+  font-size: 24px;
+  border: 1px solid #087f5b;
+  color: #087f5b;
+}
