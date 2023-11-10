@@ -2,6 +2,9 @@ import AccordionItem from "./accordionItem";
 import he from "he";
 
 export default function Accordion({ data }) {
+  if (!data || !data.data || !data.data.children) {
+    return null;
+  }
   return (
     <div className="accordion">
       {data.data.children.map((value, index) => {
